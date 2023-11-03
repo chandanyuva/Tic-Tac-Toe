@@ -1,0 +1,81 @@
+*{
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+}
+body{ 
+    min-height: 100vh; 
+    margin: 0; 
+    
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    gap: 40px;
+  }
+
+.header{
+    justify-self: stretch;
+    text-align: center;
+    font-size: 3rem;    
+    padding: 4px;
+    background-color: aliceblue;
+    margin-bottom: 4px;
+}
+p{
+    display: inline;
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.gameBoard{
+    height: 50vh;
+    width: 50vh;
+    min-width: 250px;
+    min-height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 6px;
+    filter: drop-shadow(6px 6px 8px black);
+}
+
+
+.cell{
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(white,aliceblue);
+}
+
+.cell:hover{
+    transform: translateY(-1px);
+    transition: 500ms ease;
+}
+
+/* .cell>svg{
+    width: 30;
+} */
+
+.footer {
+    justify-self: stretch;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-weight: 400;
+    background-color: aliceblue;
+}
+.footer > p > a {
+    color: black;
+}
+.footer > p > a:hover {
+    color: black;
+    padding: 2px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
